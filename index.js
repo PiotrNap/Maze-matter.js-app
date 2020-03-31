@@ -1,7 +1,7 @@
 const { Engine, Render, Runner, World, Bodies, Body, Events } = Matter;
 
-const cellsHorizontal = 4;
-const cellsVertical = 3;
+const cellsHorizontal = 16;
+const cellsVertical = 15;
 const width = window.innerWidth;
 const height = window.innerHeight;
 
@@ -164,7 +164,7 @@ verticals.forEach((row, rowIndex) => {
 const goal = Bodies.rectangle(
   width - unitLengthX / 2,
   height - unitLengthY / 2,
-  unitLengthX * 0.5,
+  unitLengthX * 0.4,
   unitLengthY * 0.4,
   {
     label: "goal",
